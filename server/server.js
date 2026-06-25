@@ -10,9 +10,7 @@ const app = express();
 const allowedOrigins = [
   "http://localhost:3000",
   "https://employeedatabase-d9cz.onrender.com",
-
-  // Add your Vercel frontend URL here later:
-  // "https://your-vercel-frontend.vercel.app",
+  "https://employee-database-tau.vercel.app"
 ];
 
 app.use(
