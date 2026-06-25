@@ -6,7 +6,7 @@ import LoadingState from "../Components/LoadingState";
 import Alert from "../Components/Alert";
 import ConfirmModal from "../Components/ConfirmModal";
 
-const API_URL = "http://localhost:8000/api/members";
+const API_URL = "https://employeedatabase-d9cz.onrender.com/api/members";
 
 const departments = [
   "Engineering",

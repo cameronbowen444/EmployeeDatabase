@@ -3,7 +3,7 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
-const API_URL = "http://localhost:8000/api";
+const API_URL = "https://employeedatabase-d9cz.onrender.com/api";
 
 const Register = () => {
   const navigate = useNavigate();

@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 import LoadingState from "../Components/LoadingState";
 
-const API_URL = "http://localhost:8000/api";
+const API_URL = "https://employeedatabase-d9cz.onrender.com/api";
 
 const Login = () => {
   const searchParams = new URLSearchParams(window.location.search);

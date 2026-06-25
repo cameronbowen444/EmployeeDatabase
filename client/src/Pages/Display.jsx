@@ -7,7 +7,7 @@ import Alert from "../Components/Alert";
 import ConfirmModal from "../Components/ConfirmModal";
 import StatsBanner from "../Components/StatsBanner";
 
-const API_URL = "http://localhost:8000/api/members";
+const API_URL = "https://employeedatabase-d9cz.onrender.com/api/members";
 
 const formatSalary = (salary) => {
   if (!salary && salary !== 0) return "N/A";

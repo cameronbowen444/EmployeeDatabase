@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Alert from "../Components/Alert";
 import ConfirmModal from "../Components/ConfirmModal";
 
-const API_URL = "http://localhost:8000/api/members";
+const API_URL = "https://employeedatabase-d9cz.onrender.com/members";
 
 const departments = [
   "Engineering",
