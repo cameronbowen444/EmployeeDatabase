@@ -3,7 +3,7 @@ import axios from "axios";
 
 const AuthContext = createContext();
 
-const API_URL = "http://localhost:8000/api";
+const API_URL = "https://employeedatabase-d9cz.onrender.com/api";
 const INACTIVITY_LIMIT = 60 * 60 * 1000; // 1 hour
 
 export const AuthProvider = ({ children }) => {
