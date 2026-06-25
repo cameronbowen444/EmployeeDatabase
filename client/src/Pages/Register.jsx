@@ -35,6 +35,20 @@ const Register = () => {
     });
   };
 
+  const fillPermissionCode = () => {
+    setForm({
+      ...form,
+      permissionCode: "123456",
+    });
+
+    setFieldErrors({
+      ...fieldErrors,
+      permissionCode: "",
+    });
+
+    setError("");
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -77,10 +91,38 @@ const Register = () => {
           <p className="text-xs font-black uppercase tracking-[0.2em] text-emerald-300">
             Permission Required
           </p>
+
           <h2 className="mt-2 text-2xl font-black text-white">Register</h2>
+
           <p className="mt-2 text-sm leading-6 text-slate-400">
             Create an approved account using the correct permission code.
           </p>
+        </div>
+
+        <div className="mb-5 rounded-2xl border border-emerald-400/30 bg-emerald-500/10 p-4">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.16em] text-emerald-300">
+                Demo Permission Code
+              </p>
+
+              <p className="mt-1 text-sm font-semibold text-slate-300">
+                Use this code to create an approved demo account.
+              </p>
+            </div>
+
+            <button
+              type="button"
+              onClick={fillPermissionCode}
+              className="rounded-xl bg-emerald-400 px-4 py-2 text-sm font-black text-slate-950 transition hover:bg-emerald-300"
+            >
+              Use 123456
+            </button>
+          </div>
+
+          <div className="mt-3 rounded-xl border border-white/10 bg-slate-950/60 px-4 py-3 text-center text-xl font-black tracking-[0.3em] text-white">
+            123456
+          </div>
         </div>
 
         {error && (
